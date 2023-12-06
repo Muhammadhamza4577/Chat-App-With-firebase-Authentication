@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2, h1{
+    text-align: left;
+    color: white;
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+}
+h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgba(59,173,227,1) 0%, 
+          rgba(87,111,230,1) 25%, 
+          rgba(152,68,183,1) 51%, 
+          rgba(255,53,127,1) 100%
+    );  
+    animation: AnimateBG 20s ease infinite;
+  }
+  
+  @keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #0048d8;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=email]:focus {
+    border: none;
+    border-bottom: 1px solid #0f84e3a9;
+  }
+  input[type=password], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #0048d8;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=password]:focus {
+    border: none;
+    border-bottom: 1px solid #0f84e3a9;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #0048d8;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=text]:focus {
+    border: none;
+    border-bottom: 1px solid #0f84e3a9;
+  }
+  ::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  button {
+    background-color: #0f84e3a9;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px !important;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0048d8;
+  }
+  
+  .row {
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    margin-top: 100px !important;
+    margin-bottom: 100px;
+    margin-left: 150px !important;
+    margin-right: 150px !important;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
